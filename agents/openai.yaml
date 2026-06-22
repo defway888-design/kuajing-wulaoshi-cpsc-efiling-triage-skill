@@ -1,0 +1,14 @@
+interface:
+  display_name: "跨境吴老师 CPSC/eFiling 初筛"
+  short_description: "用 ASIN 自动生成跨境卖家版 CPSC/eFiling 初筛报告。"
+  brand_color: "#1F6F5B"
+  default_prompt: "Use $kuajing-wu-cpsc-efiling-triage to run a 跨境吴老师 branded CPSC/eFiling automatic initial screening report for this Amazon US ASIN."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "sellersprite_mcp"
+      description: "SellerSprite MCP for ASIN detail, listing, category, images, variants, and product profile data."
+
+policy:
+  allow_implicit_invocation: true
